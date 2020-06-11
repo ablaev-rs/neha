@@ -71,8 +71,9 @@ $textColor = #979797
     flex-direction row
     flex-wrap wrap
   +desktop()
-    flex-direction row
-    flex-wrap wrap
+    margin-left -24px
+  +wide()
+    margin-left -28px
 
 .card
   margin-left 0px
@@ -83,8 +84,10 @@ $textColor = #979797
     width 46%
   +desktop()
     width 71%
+    margin-left 24px
   +wide()
-    width 22%
+    width 21%
+    margin-left 28px
 
   &.first
     margin-top 0u
