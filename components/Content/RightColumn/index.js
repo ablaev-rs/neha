@@ -117,6 +117,7 @@ export default observer(function RightColumn () {
               Image.image(
                 source={uri: base + url}
               )
+              
       View.cards
         each product, index in products
           View.card(key = index styleName=index === 0 ? 'first' : '')

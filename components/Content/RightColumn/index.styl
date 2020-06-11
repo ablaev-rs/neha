@@ -5,14 +5,15 @@ $textColor = #979797
 
 .root
   justify-content flex-start
+  padding-top 5u
   +desktop()
     flex 1
     margin-left 4u
+    padding-top 0u
 
 /*  SEARCH DATA */
 .searchData
   flex-direction column
-  padding 6u 0u
   +tablet()
     flex-direction row
     justify-content space-between
@@ -65,29 +66,22 @@ $textColor = #979797
 
 /* PRODUCTS */
 .cards
+  margin-top 5u
   +tablet()
     margin-left -28px
-    margin-top -5u
+    margin-top 0u
     flex-direction row
     flex-wrap wrap
-  +desktop()
-    margin-left -24px
-  +wide()
-    margin-left -28px
 
 .card
   margin-left 0px
   margin-top 5u
   +tablet()
+    width 45%
     margin-top 6u
     margin-left 28px
-    width 46%
-  +desktop()
-    width 71%
-    margin-left 24px
   +wide()
     width 21%
-    margin-left 28px
 
   &.first
     margin-top 0u
