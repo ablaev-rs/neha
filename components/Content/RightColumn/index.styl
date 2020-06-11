@@ -1,0 +1,135 @@
+// 1u is a 8px grid unit. 1u === 8px
+$headers = #686868
+$colorRed = #ee3333
+$textColor = #979797
+
+.root
+  justify-content flex-start
+  +desktop()
+    flex 1
+    margin-left 4u
+
+/*  SEARCH DATA */
+.searchData
+  flex-direction column
+  padding 6u 0u
+  +tablet()
+    flex-direction row
+    justify-content space-between
+
+.searchResult
+  flex-direction column
+  +tablet()
+    flex-direction row
+
+.found
+  color $headers
+  font-size 2.1u
+
+.red
+  color $colorRed
+
+.sort
+  color $headers
+  font-size 2.1u
+  margin-top 2u
+  +tablet()
+    margin-top 0u
+    margin-left 6u
+
+.dropdown
+  color #000000
+  font-size 2.1u
+  font-weight 300
+
+.icons
+  flex-direction row
+  margin-top 3u
+  +tablet()
+    margin-top 0u
+
+.btnIcons
+  margin-left 3u
+
+  &.first
+    margin-left 0u
+
+.downArrow
+  width 12px
+  height 12px
+  margin-left 2u
+
+.image
+  width 20px
+  height 20px
+
+/* PRODUCTS */
+.cards
+  +tablet()
+    margin-left -28px
+    margin-top -5u
+    flex-direction row
+    flex-wrap wrap
+  +desktop()
+    flex-direction row
+    flex-wrap wrap
+
+.card
+  margin-left 0px
+  margin-top 5u
+  +tablet()
+    margin-top 6u
+    margin-left 28px
+    width 46%
+  +desktop()
+    width 71%
+  +wide()
+    width 22%
+
+  &.first
+    margin-top 0u
+    +tablet()
+      margin-top 6u
+
+.photoProduct
+  min-width = 260px
+  max-width = 768px
+  height 59u
+  +tablet()
+    height 49u
+  +desktop()
+    height 69u
+  +wide()
+    height 24u
+    
+
+.description
+  flex-direction row
+  justify-content space-between
+  margin-top 2u
+
+.name
+  color $headers
+  font-size 1.6u
+  text-transform uppercase
+
+.category
+  color $headers
+  font-size 1.5u
+  margin-top 3px
+
+.price
+  color $colorRed
+  font-size 1.6u
+  
+.saleBlock
+  position absolute
+  margin-top 2u
+  margin-left 2u  
+  background #626262
+  padding 4px 10px
+
+.sale
+  color #ffffff
+  text-transform uppercase
+  font-size 1.6u
