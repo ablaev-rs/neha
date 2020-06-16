@@ -111,14 +111,13 @@ export default observer(function LeftColumn () {
 
       View.sizeBlock
         each value, index in sizes
-          View.sizes(key=index styleName=!index && 'first')
-            Text.text(onPress=() => Linking.openURL('#'))  #{value.size}
+          Text.size.text(key=index styleName=!index && 'first' onPress=() => Linking.openURL('#'))  #{value.size}
   
       Text.header Top rated products
 
       View.relatedBlock
         each value, index in products
-          View.productInfo
+          View.productInfo(key=index styleName=!index && 'first')
             Image.imageProduct(
               source={uri: base + value.image}
             )
@@ -135,7 +134,7 @@ export default observer(function LeftColumn () {
                       Image.imageStar(
                         source={uri: pathWhiteStar}
                       )
-              Text.price #{value.price}
+              Text.price= value.price
 
 
   `
