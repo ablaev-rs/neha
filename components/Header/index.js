@@ -11,7 +11,7 @@ export default observer(function Header () {
         View.content
           Text.header Shop
           View.breadcrumb
-            Text.link(onPress=() => Linking.openURL('/')) Home #{' '}/
-            Text.text #{'  '}Shop
+            Text.link(onPress=() => Linking.openURL('/')) Home /
+            Text.text #{' '}Shop
   `
 })

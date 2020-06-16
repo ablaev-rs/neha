@@ -96,7 +96,7 @@ export default observer(function LeftColumn () {
       
       View.categoriesBlock
         each value, index in categories
-          View.cat(key=index styleName=index === 0 ? 'first' : '')
+          View.cat(key=index styleName=!index && 'first')
             Text.text(onPress=() => Linking.openURL('#'))  #{value.category}
             Text.text #{value.count}
 
@@ -104,14 +104,14 @@ export default observer(function LeftColumn () {
 
       View.colorsBlock
         each value, index in colors
-          View.colors(key=index styleName=index === 0 ? 'first' : '')
+          View.colors(key=index styleName=!index && 'first')
             TouchableOpacity.colorBtn(style = { backgroundColor: value.color })
 
       Text.header Size
 
       View.sizeBlock
         each value, index in sizes
-          View.sizes(key=index styleName=index === 0 ? 'first' : '')
+          View.sizes(key=index styleName=!index && 'first')
             Text.text(onPress=() => Linking.openURL('#'))  #{value.size}
   
       Text.header Top rated products
@@ -126,7 +126,7 @@ export default observer(function LeftColumn () {
               Text.name(onPress=() => Linking.openURL('#')) #{value.name}
               View.starsBlock
                 each rate, index in value.rating   
-                  View.stars(key=index styleName=index === 0 ? 'first' : '') 
+                  View.stars(key=index styleName=!index && 'first') 
                     if rate === 1
                       Image.imageStar(
                         source={uri: pathYellowStar}
