@@ -41,7 +41,7 @@ export default observer(function Header () {
             Text.copy 2018 . All Right Reserved.
 
       View.rightCol
-        View.contactData 
+        View.contactData(styleName='first')
           Text.title Phone :#{' '}
           Text.value +012 345 678 102
         View.contactData 
