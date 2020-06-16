@@ -17,84 +17,84 @@ export default observer(function RightColumn () {
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: true
+      isSale: true
     },
     {
       imageUrl: '/img/prod2.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: false
+      isSale: false
     },
     {
       imageUrl: '/img/prod3.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: true
+      isSale: true
     },
     {
       imageUrl: '/img/prod4.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: false
+      isSale: false
     },
     {
       imageUrl: '/img/prod5.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: true
+      isSale: true
     },
     {
       imageUrl: '/img/prod6.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: false
+      isSale: false
     },
     {
       imageUrl: '/img/prod7.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: true
+      isSale: true
     },
     {
       imageUrl: '/img/prod8.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: false
+      isSale: false
     },
     {
       imageUrl: '/img/prod9.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: true
+      isSale: true
     },
     {
       imageUrl: '/img/prod10.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: false
+      isSale: false
     },
     {
       imageUrl: '/img/prod11.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: true
+      isSale: true
     },
     {
       imageUrl: '/img/prod12.jpg',
       name: 'WOODEN FURNITURE',
       category: 'Electronic',
       price: '$110.00',
-      sale: false
+      isSale: false
     }
   ]
   return pug`
@@ -125,7 +125,7 @@ export default observer(function RightColumn () {
               Image.photoProduct.centered(
                 source={uri: base + product.imageUrl}
               )
-              if product.sale
+              if product.isSale
                 View.saleBlock
                   Text.sale sale
             View.description

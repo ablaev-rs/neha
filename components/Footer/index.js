@@ -41,16 +41,15 @@ export default observer(function Header () {
             Text.copy 2018 . All Right Reserved.
 
       View.rightCol
-        View.contact
-          View.contactData 
-            Text.title Phone :#{' '}
-            Text.value +012 345 678 102
-          View.contactData 
-            Text.title Email :#{' '}
-            Text.value(onPress=() => Linking.openURL('#')) info@example.com
-          View.contactData 
-            Text.title Address :#{' '}
-            Text.value Dhaka Bangladesh
+        View.contactData 
+          Text.title Phone :#{' '}
+          Text.value +012 345 678 102
+        View.contactData 
+          Text.title Email :#{' '}
+          Text.value(onPress=() => Linking.openURL('#')) info@example.com
+        View.contactData 
+          Text.title Address :#{' '}
+          Text.value Dhaka Bangladesh
 
 
 
