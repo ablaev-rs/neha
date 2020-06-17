@@ -9,9 +9,9 @@ export default observer(function Filter () {
       Text.header Filter by Price
       View.filterBlock
         View.filter
-          View.filterLeft
+          View.slider
           View.filterBar
-          View.filterRight
+          View.slider
         View.filterData
           Text.lemma Price : $20 - $100
           Text.lemma Filter
