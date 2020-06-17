@@ -10,7 +10,7 @@ export default observer(function LeftColumn () {
 
   return pug`
     View.root
-      Text.header(styleName= 'first') Search Products
+      Text.header(styleName='first') Search Products
       View.searchBlock
         TextInput.searchField(placeholder = 'Search Products...')
         TouchableOpacity.searchBtn

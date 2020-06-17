@@ -48,7 +48,7 @@ export default observer(function LeftColumn () {
               Text.name(onPress=() => Linking.openURL('#')) #{value.name}
               View.starsBlock
                 each rate, index in value.rating   
-                  View.stars(key=index styleName=!index && 'first') 
+                  View.stars(key=index styleName=!index && 'first')
                     if rate === 1
                       Image.imageStar(
                         source={uri: pathYellowStar}

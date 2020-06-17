@@ -44,10 +44,10 @@ export default observer(function Header () {
         View.contactData(styleName='first')
           Text.title Phone :#{' '}
           Text.value +012 345 678 102
-        View.contactData 
+        View.contactData
           Text.title Email :#{' '}
           Text.value(onPress=() => Linking.openURL('#')) info@example.com
-        View.contactData 
+        View.contactData
           Text.title Address :#{' '}
           Text.value Dhaka Bangladesh
 

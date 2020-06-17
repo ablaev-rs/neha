@@ -11,7 +11,7 @@ import Products from 'components/Content/LeftColumn/Products'
 
 export default observer(function LeftColumn () {
   return pug`
-    View.root      
+    View.root
       Search
       Filter
       Categories
