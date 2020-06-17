@@ -9,8 +9,8 @@ export default observer(function LeftColumn () {
   const url = '/img/search-active.png'
 
   return pug`
-    View.root
-      Text.header(styleName='first') Search Products
+    View.root(styleName='first')
+      Text.header Search Products
       View.searchBlock
         TextInput.searchField(placeholder = 'Search Products...')
         TouchableOpacity.searchBtn
