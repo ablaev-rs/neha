@@ -1,0 +1,150 @@
+// 1u is a 8px grid unit. 1u === 8px
+$textColor = #636363 
+$borderColor = #dddddd 
+$colorWhite = #ffffff 
+
+.root
+  +wide()
+    width 100%
+    background #F5F5F5
+    margin-top 9u
+
+.container
+  padding 5u 3u 6u 3u
+  max-width 1280px
+  width 100%
+  margin-top 9u
+  background #F5F5F5
+  +tablet()
+    padding 6u 9u 10u 5u
+    flex-direction row
+    flex-wrap wrap
+    align-items center
+  +desktop()
+    padding 6u 7u 10u 7u
+    justify-content space-between
+  +wide()
+    padding-top 0u
+    padding-bottom 10u
+    margin-left auto
+    margin-right auto
+    margin-top 0u
+    
+
+/* LEFT COL */
+.leftCol
+  +tablet()
+    width 30u
+  +desktop()
+    width auto
+
+.exp
+  color $textColor
+  font-size 1.6u
+
+.social
+  flex-direction row
+  margin-top 2u
+  width 100%
+
+.btnSocial
+  border-radius 9999px
+  margin-left 2u
+  &.first
+    margin-left 0u
+
+.imageBorder
+  align-items center
+  justify-content center
+  border solid 1px $borderColor 
+  padding 1u
+  border-radius 40px
+  border-color #353535
+
+.image
+  width 12px
+  height 12px
+
+
+/* CENTRAL COL */
+.centralCol
+  margin-top 2u
+  width 100%
+  +tablet()    
+    margin-top 0u
+    text-align center
+    width 50u
+  +desktop()
+    width auto
+
+/* NAVIGATION */
+.navigation
+  flex-direction row
+  margin-top 2u
+  +tablet()
+    justify-content center
+
+.item
+  margin-left 2u
+  +tablet()
+    margin-left 4u
+
+  &.first
+    margin-left 0
+
+.text
+  text-transform uppercase
+  color $textColor
+  font-weight 500
+  font-size 12px
+/* / */
+
+.sep
+  height 1px
+  width 19u
+  background $textColor
+  margin-top 2u
+  +tablet()
+    margin 2u auto 0u auto   
+
+.copyright
+  margin-top 1u
+  width 100%
+  flex-direction row
+  +tablet()
+    justify-content center
+
+.copy
+  color $textColor 
+  font-size 13px
+  line-height 3u
+  font-weight 300
+
+.link
+  font-size 13px
+
+/* RIGHT COL */
+.rightCol
+  margin-top 3u
+  +tablet()
+    margin-top 0u
+  +desktop()
+    width auto
+
+.contactData
+  margin-top 1.5u
+  flex-direction row
+
+  &.first
+    margin-top 0u
+
+.value
+  color $textColor 
+  font-size 1.6u
+
+.title
+  color $textColor 
+  font-size 1.6u
+  font-weight 500
+  text-transform uppercase
+

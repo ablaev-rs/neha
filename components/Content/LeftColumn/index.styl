@@ -1,0 +1,136 @@
+// 1u is a 8px grid unit. 1u === 8px
+$headers = #686868
+$textColor = #979797
+
+.root
+  justify-content flex-start
+
+.header
+  color $headers
+  font-size 2.1u
+  margin-top 5u
+  
+  &.first
+    margin-top 0u
+    
+
+/* SEARCH */
+.searchBlock
+  margin-top 3u
+  flex-direction row
+  
+.searchField
+  height 5u
+  width 100%
+  background #F1F1F1
+  color $headers
+  padding 0u 2u
+
+.searchBtn
+  width 5u
+  height 5u
+  background #DEDEDE
+  justify-content center
+  align-items center
+
+.image
+  width 2u
+  height 2u
+
+/* FILTER */
+.filterBlock
+  margin-top 3u
+
+.filter
+  height 4px
+  background #B7B7B7
+
+.filterData
+  flex-direction row
+  justify-content space-between
+  margin-top 3u
+
+.lemma
+  color $headers
+  font-size 1.5u
+
+/* CATEGORIES */
+.categoriesBlock
+  margin-top 2u
+
+.cat
+  flex-direction row
+  justify-content space-between
+
+.text
+  color $textColor
+  font-weight 400
+  line-height 4u
+  
+/* COLORS */
+.colorsBlock
+  flex-direction row
+  margin-top 3u
+
+.colors
+  margin-left 2u
+  
+  &.first
+    margin-left 0u
+
+.colorBtn
+  height 20px
+  width 20px
+  border-radius 9999px
+
+/* SIZE */
+.sizeBlock
+  flex-direction row
+  margin-top 3u
+
+.size
+  margin-left 2u
+  
+  &.first
+    margin-left 0u
+
+/* RELATED PRODUCT */
+.relatedBlock
+  margin-top 3u 
+  
+.productInfo
+  flex-direction row
+  margin-top 3u
+
+  &.first
+    margin-top 0u
+
+.imageProduct
+  width 10u
+  height 10u
+
+.about
+  margin-left 2u
+
+.name
+  font-size 1.5u
+  color $headers
+
+.price
+  font-size 1.5u
+  color $headers
+  margin-top 2u
+
+.starsBlock
+  margin-top 2u
+  flex-direction row
+
+.stars
+  margin-left 6px
+
+  &.first
+    margin-left 0px
+
+.imageStar
+  width 10px
+  height 10px
