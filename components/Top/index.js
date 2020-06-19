@@ -15,7 +15,6 @@ export default observer(function Top () {
   ]
   return pug`
     View.root
-
       View.logotype
         Logotype
           

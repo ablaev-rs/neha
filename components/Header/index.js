@@ -7,11 +7,12 @@ export default observer(function Header () {
   const urlImage = '/img/breadcrumb.jpg'
   return pug`
     View.root
-      ImageBackground.bgImage(source=urlImage)
-        View.content
-          Text.header Shop
-          View.breadcrumb
-            Text.link(onPress=() => Linking.openURL('/')) Home /
-            Text.text #{' '}Shop
+      View.fullBg
+        ImageBackground.bgImage(source=urlImage)
+          View.content
+            Text.header Shop
+            View.breadcrumb
+              Text.link(onPress=() => Linking.openURL('/')) Home /
+              Text.text #{' '}Shop
   `
 })

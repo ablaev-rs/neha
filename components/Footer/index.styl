@@ -4,10 +4,17 @@ $borderColor = #dddddd
 $colorWhite = #ffffff 
 
 .root
+  +wide()
+    width 100%
+    background #F5F5F5
+    margin-top 9u
+
+.container
   padding 5u 3u 6u 3u
+  max-width 1280px
   width 100%
-  background #F5F5F5
   margin-top 9u
+  background #F5F5F5
   +tablet()
     padding 6u 9u 10u 5u
     flex-direction row
@@ -17,7 +24,12 @@ $colorWhite = #ffffff
     padding 6u 7u 10u 7u
     justify-content space-between
   +wide()
-    padding 6u 17u 10u 17u
+    padding-top 6u
+    padding-bottom 10u
+    margin-left auto
+    margin-right auto
+    
+    
 
 /* LEFT COL */
 .leftCol
